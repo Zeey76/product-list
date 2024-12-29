@@ -337,5 +337,7 @@ function reset(item = null) {
     });
   }
 }
-attachMenuEventListeners()
-renderMenu();
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderMenu();
+});
