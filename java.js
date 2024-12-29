@@ -111,7 +111,7 @@ function increaseQuantity(quantity) {
 }
 
 function reduceQuantity(item, quantity) {
-  if (quantity.textContent >= 1) {
+  if (quantity.textContent > 1) {
     quantity.textContent = parseInt(quantity.textContent) - 1;
   } else if (quantity.textContent <= 1) {
     reset(item);
@@ -337,5 +337,5 @@ function reset(item = null) {
     });
   }
 }
-
+attachMenuEventListeners()
 renderMenu();
