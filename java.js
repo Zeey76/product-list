@@ -260,6 +260,7 @@ function removeCartItem(itemName) {
 
 function confirmOrder() {
   orderConfirmation.classList.remove("hide");
+  document.body.classList.add("no-scroll");
   confirmedOrder.innerHTML = "";
   confirmedOrder.innerHTML = `
      <img src="./assets/images/icon-order-confirmed.svg" class="w-3">
@@ -306,6 +307,7 @@ function confirmedItems() {
 function startNewOrder() {
   document.querySelector(".start-new-order").addEventListener("click", () => {
     orderConfirmation.classList.add("hide");
+    document.body.classList.remove("no-scroll");
     cart = [];
     renderCartItems();
     reset();

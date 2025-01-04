@@ -110,6 +110,10 @@
     scrollbar-width: thin;
     scrollbar-color: #d1d5db #f0f0f0;
   }
+
+  .no-scroll {
+    overflow: hidden;
+  }
 }
 
 /* Media Queries */
